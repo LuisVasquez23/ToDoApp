@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' , Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+.text-start{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.btn-add{
+    width: auto;
+    padding: 10px;
+    border: none;
+    background-color: #42b659;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+
+.btn-add:hover{
+    background-color: #379f4c;
+    cursor: pointer;
+}
+
+.tasks-container{
+    width: 100%;
+    
+}
+
+.tasks{
+    width: 100%;
+    margin: 20px 0;
+    height: 60vh;
+    background-color: white;
+    list-style: none;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto; /* Agregar desplazamiento horizontal si es necesario */
+    justify-content: center; /* Inicialmente, alinear al inicio */
+
+}
+
+.task{
+    width: 100%;
+    max-width: 360px;
+    height: 100%;
+    max-height: 360px;
+    background-color: #fde650;
+    border-radius: 10px;
+    color: rgb(113, 113, 113);
+    overflow: auto;
+}
+
+
+
+.task:hover{
+    cursor: pointer;
+}
+
+.modal-add{
+    width: 50%;
+    position: absolute;
+    background-color: #ffffffde;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px rgba(95, 95, 95, 0.242);
+    top: 20%;
+    left: 25%;
+}
+
+.modal-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-content h2{
+    color: rgb(81, 81, 81);
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.form-input{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid rgb(95, 95, 95);
+    border-radius: 6px;
+}
+
+textarea{
+    resize: none;
+    min-height: 200px;
+}
+
+.task-header{
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #f8dd30;
+    color: rgb(96, 96, 96);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-body{
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    height: 78%;
+}
+
+.task-footer{
+    height: 10%;
+    padding: 0px 20px;
+}
+
+.no-tasks{
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: rgb(70, 70, 70);
+}
+
+.tasks-content {
+    border: 1px solid rgb(172, 172, 172);
+    margin-top: 10px;
+    border-radius: 5px;
+}
